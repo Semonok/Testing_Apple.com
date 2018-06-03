@@ -14,7 +14,7 @@ class HeaderLocators:
     music_page             = (By.XPATH, "//a[@class='ac-gn-link ac-gn-link-music']")
     support_page           = (By.XPATH, "//a[@class='ac-gn-link ac-gn-link-support']")
     search_menu            = (By.XPATH, "//a[@class='ac-gn-link ac-gn-link-search']")
-    settings_menu          = (By.XPATH, "//a[@class='ac-gn-link ac-gn-link-bag']")
+    settings_menu          = (By.XPATH, "//li[@id='ac-gn-bag']/a[@class='ac-gn-link ac-gn-link-bag']")
     bag_page               = (By.XPATH, "//a[@class='ac-gn-bagview-nav-link ac-gn-bagview-nav-link-bag']")
     favotites_page         = (By.XPATH, "//a[@class='ac-gn-bagview-nav-link ac-gn-bagview-nav-link-favorites']")
     orders_page            = (By.XPATH, "//a[@class='ac-gn-bagview-nav-link ac-gn-bagview-nav-link-orders']")
