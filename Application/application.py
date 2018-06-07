@@ -4,6 +4,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 from Pages.main_page import MainPage
 from Pages.header_block import AllPagesCommonHeader
 from Pages.login_page import LoginPage
+from Pages.footer_block import AllPagesCommonFooter
+from Pages.job_page import JobPage
 
 class Application:
 
@@ -14,6 +16,8 @@ class Application:
         self.main_page = MainPage(self.driver)
         self.header_block = AllPagesCommonHeader(self.driver)
         self.login_page = LoginPage(self.driver)
+        self.footer_block = AllPagesCommonFooter(self.driver)
+        self.job_page = JobPage(self.driver)
 
     def home_page(self):
         self.driver.get("https://www.apple.com/")
@@ -31,5 +35,6 @@ class Application:
     @property
     def page_title(self):
         return self.driver.title
+
 
 

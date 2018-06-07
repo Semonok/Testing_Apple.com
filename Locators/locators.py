@@ -38,9 +38,10 @@ class MainPageLocators:    # 9 items total
 
 class FooterLocators:
 
-    footer_up      = (By.XPATH, "//a[@class='ac-gf-directory-column-section-link']") # 28 links
-    footer_legal   = (By.XPATH, "//a[@class='ac-gf-footer-legal-links']") # 6 links
-    footer_country = (By.XPATH, "//a[@class='ac-gf-footer-locale-link']") # 1 link
+    footer_up         = (By.XPATH, "//a[@class='ac-gf-directory-column-section-link']") # 28 links
+    footer_legal      = (By.XPATH, "//a[@class='ac-gf-footer-legal-links']") # 6 links
+    footer_country    = (By.XPATH, "//a[@class='ac-gf-footer-locale-link']") # 1 link
+    job_at_apple_link = (By.XPATH, "//a[@href='/jobs/us/']")
 
 class LoginPageLocators:
 
@@ -55,6 +56,9 @@ class LoginPageLocators:
 class CountryRegionPageLocators:
     # Choose country region locators (128 total)
     select_country = (By.XPATH, "//a[@class='block']") # Maybe later I will write all unique locators on this page
+
+class JobPageLocators:
+    open_search_job_page = (By.XPATH, "//ul[@class='no-margin no-padding']/li[5]/a")
 
 
 
