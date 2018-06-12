@@ -21,6 +21,8 @@ class HeaderLocators:
     account_page           = (By.XPATH, "//a[@class='ac-gn-bagview-nav-link ac-gn-bagview-nav-link-account']")
     sign_in_page           = (By.XPATH, "//a[@class='ac-gn-bagview-nav-link ac-gn-bagview-nav-link-signIn']")
     sign_out               = (By.XPATH, "//a[@class='ac-gn-bagview-nav-link ac-gn-bagview-nav-link-signOut']")
+    quick_link             = (By.XPATH, "//li[@class='ac-gn-searchresults-item ac-gn-searchresults-animated']/a")
+    search_field           = (By.XPATH, "//input[@id='ac-gn-searchform-input']")
 
 
 class MainPageLocators:    # 9 items total
@@ -65,6 +67,25 @@ class FavoritesPageLocators:
 
 class BagPageLocators:
     bag_main_text = (By.XPATH, "//h1[@class='rs-bag-header']")
+
+class IphonePageLocators:
+    iphone_x    = (By.XPATH, "//li[@class='chapternav-item chapternav-item-overview']/a")
+    iphone_8    = (By.XPATH, "//li[@class='chapternav-item chapternav-item-iphone-8']/a")
+    iphone_7    = (By.XPATH, "//li[@class='chapternav-item chapternav-item-iphone-7']/a")
+    iphone_6s   = (By.XPATH, "//li[@class='chapternav-item chapternav-item-iphone-6s']/a")
+    iphone_se   = (By.XPATH, "//li[@class='chapternav-item chapternav-item-iphone-se']/a")
+    ios_11      = (By.XPATH, "//li[@class='chapternav-item chapternav-item-ios']/a")
+    accessories = (By.XPATH, "//li[@class='chapternav-item chapternav-item-accessories']/a")
+    compare     = (By.XPATH, "//li[@class='chapternav-item chapternav-item-compare']/a")
+
+class MacPageLocators:
+    macbook      = (By.XPATH, "//li[@class='chapternav-item chapternav-item-macbook macbook']/a")
+    macbook_air  = (By.XPATH, "//li[@class='chapternav-item chapternav-item-macbook-air macbook-air']/a")
+    macbook_pro  = (By.XPATH, "//li[@class='chapternav-item chapternav-item-macbook-pro macbook-pro']/a")
+    imac_pro_buy = (By.XPATH, "//section[@class='fp-product product-imac-pro section theme-dark']//a[2]")
+
+class ImacProBuyPageLocators:
+    favorites_button = (By.XPATH, "//button[@class='fv-link as-heart favorites  ']")
 
 
 
