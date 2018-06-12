@@ -53,12 +53,19 @@ class LoginPageLocators:
     main_error     = (By.XPATH, "//div[@class='form-alert is-error']")
 
 
-class CountryRegionPageLocators:
+class CountryListPageLocators:
     # Choose country region locators (128 total)
     select_country = (By.XPATH, "//a[@class='block']") # Maybe later I will write all unique locators on this page
 
 class JobPageLocators:
     open_search_job_page = (By.XPATH, "//ul[@class='no-margin no-padding']/li[5]/a")
+
+class FavoritesPageLocators:
+    empty_list = (By.XPATH, "//div[@id='empty-list-message']")
+
+class BagPageLocators:
+    bag_main_text = (By.XPATH, "//h1[@class='rs-bag-header']")
+
 
 
 
