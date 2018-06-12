@@ -11,3 +11,6 @@ class AllPagesCommonFooter():
 
     def open_job_page(self):
         self.driver.find_element(*self.locators.job_at_apple_link).click()
+
+    def open_country_list(self):
+        self.driver.find_element(*self.locators.footer_country).click()

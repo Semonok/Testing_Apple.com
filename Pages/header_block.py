@@ -35,3 +35,11 @@ class AllPagesCommonHeader():
     def which_user_sign_in(self):
         self.open_settings_menu()
         return self.driver.find_element(*self.locators.sign_out).text[9:]
+
+    def open_favorites_page(self):
+        self.open_settings_menu()
+        self.driver.find_element(*self.locators.favotites_page).click()
+
+    def open_bag_page(self):
+        self.open_settings_menu()
+        self.driver.find_element(*self.locators.bag_page).click()
