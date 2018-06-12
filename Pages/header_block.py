@@ -1,5 +1,6 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.keys import Keys
 from Locators.locators import HeaderLocators
 
 class AllPagesCommonHeader():
@@ -43,3 +44,25 @@ class AllPagesCommonHeader():
     def open_bag_page(self):
         self.open_settings_menu()
         self.driver.find_element(*self.locators.bag_page).click()
+
+    def open_search(self):
+        self.driver.find_element(*self.locators.search_menu).click()
+
+    @property
+    def five_quick_links_are_present(self):
+        if len(self.driver.find_elements(*self.locators.quick_link)) == 5:
+            return True
+        else:
+            return False
+
+    def search_item(self,item):
+        self.driver.find_element(*self.locators.search_field).clear()
+        self.driver.find_element(*self.locators.search_field).send_keys(item)
+        self.driver.find_element(*self.locators.search_field).send_keys(Keys.ENTER)
+
+    def open_iphone_page(self):
+        self.driver.find_element(*self.locators.iphone_page).click()
+
+    def open_mac_page(self):
+        self.driver.find_element(*self.locators.mac_page).click()
+
