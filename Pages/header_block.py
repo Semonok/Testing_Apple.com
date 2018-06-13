@@ -41,6 +41,11 @@ class AllPagesCommonHeader():
         self.open_settings_menu()
         self.driver.find_element(*self.locators.favotites_page).click()
 
+    @property
+    def favorites_count_in_settings_menu(self):
+        self.open_settings_menu()
+        return int(self.driver.find_element(*self.locators.favotites_page).text[11:-1])
+
     def open_bag_page(self):
         self.open_settings_menu()
         self.driver.find_element(*self.locators.bag_page).click()

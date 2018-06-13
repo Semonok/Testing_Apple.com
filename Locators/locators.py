@@ -14,7 +14,7 @@ class HeaderLocators:
     music_page             = (By.XPATH, "//a[@class='ac-gn-link ac-gn-link-music']")
     support_page           = (By.XPATH, "//a[@class='ac-gn-link ac-gn-link-support']")
     search_menu            = (By.XPATH, "//a[@class='ac-gn-link ac-gn-link-search']")
-    settings_menu          = (By.XPATH, "//li[@id='ac-gn-bag']/a[@class='ac-gn-link ac-gn-link-bag']")
+    settings_menu          = (By.XPATH, "//li[@id='ac-gn-bag']/a")
     bag_page               = (By.XPATH, "//a[@class='ac-gn-bagview-nav-link ac-gn-bagview-nav-link-bag']")
     favotites_page         = (By.XPATH, "//a[@class='ac-gn-bagview-nav-link ac-gn-bagview-nav-link-favorites']")
     orders_page            = (By.XPATH, "//a[@class='ac-gn-bagview-nav-link ac-gn-bagview-nav-link-orders']")
@@ -64,6 +64,7 @@ class JobPageLocators:
 
 class FavoritesPageLocators:
     empty_list = (By.XPATH, "//div[@id='empty-list-message']")
+    item_name  = (By.XPATH, "//h2[@class='rs-favorites-item-heading']")
 
 class BagPageLocators:
     bag_main_text = (By.XPATH, "//h1[@class='rs-bag-header']")
