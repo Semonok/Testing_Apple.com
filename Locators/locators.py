@@ -23,6 +23,7 @@ class HeaderLocators:
     sign_out               = (By.XPATH, "//a[@class='ac-gn-bagview-nav-link ac-gn-bagview-nav-link-signOut']")
     quick_link             = (By.XPATH, "//li[@class='ac-gn-searchresults-item ac-gn-searchresults-animated']/a")
     search_field           = (By.XPATH, "//input[@id='ac-gn-searchform-input']")
+    item_in_bag            = (By.XPATH, "//span[@class='ac-gn-bagview-bagitem-column2']")
 
 
 class MainPageLocators:    # 9 items total
@@ -47,9 +48,9 @@ class FooterLocators:
 
 class LoginPageLocators:
 
-    login          = (By.XPATH, "//input[@type='email']")
+    login          = (By.XPATH, "//input[@id='loginHome.customerLogin.appleId']")
     login_error    = (By.XPATH, "//div[@id='loginHome.customerLogin.appleId-error']")
-    password       = (By.XPATH, "//input[@type='password']")
+    password       = (By.XPATH, "//input[@id='loginHome.customerLogin.password']")
     password_error = (By.XPATH, "//div[@id='loginHome.customerLogin.password-error']")
     confirm_button = (By.XPATH, "//button[@id='signin-button-submit']")
     main_error     = (By.XPATH, "//div[@class='form-alert is-error']")
@@ -63,11 +64,23 @@ class JobPageLocators:
     open_search_job_page = (By.XPATH, "//ul[@class='no-margin no-padding']/li[5]/a")
 
 class FavoritesPageLocators:
-    empty_list = (By.XPATH, "//div[@id='empty-list-message']")
-    item_name  = (By.XPATH, "//h2[@class='rs-favorites-item-heading']")
+    empty_list                        = (By.XPATH, "//div[@id='empty-list-message']")
+    item_name                         = (By.XPATH, "//h2[@class='rs-favorites-item-heading']")
+    edit_remove                       = (By.XPATH, "//button[@id='favorites-edit-items']")
+    select_item                       = (By.XPATH, "//span[@class='form-choice-indicator rs-favorites-checkboxicon']")
+    select_item_relative_by_edit_name = (By.XPATH, "../../../../../../../../../li//"
+        "span[@class='form-choice-indicator rs-favorites-checkboxicon']")
+    cancel                            = (By.XPATH, "//button[@class='favorites-cancel-items']")
+
 
 class BagPageLocators:
-    bag_main_text = (By.XPATH, "//h1[@class='rs-bag-header']")
+    bag_main_text     = (By.XPATH, "//h1[@class='rs-bag-header']")
+    items_name        = (By.XPATH, "//h2[@class='rs-iteminfo-title']")
+    item_price        = (By.XPATH, "//p[@class='rs-iteminfo-price']")
+    total_price       = (By.XPATH, "//div[@class='rs-summary-content  rs-summary-total']/div[@class='rs-summary-value']")
+    remove            = (By.XPATH, '//button[@class="as-buttonlink rs-iteminfo-remove"]')
+    continue_shopping = (By.XPATH, '//a[@class="button form-button button-secondary"]')
+
 
 class IphonePageLocators:
     iphone_x    = (By.XPATH, "//li[@class='chapternav-item chapternav-item-overview']/a")
@@ -83,11 +96,18 @@ class MacPageLocators:
     macbook      = (By.XPATH, "//li[@class='chapternav-item chapternav-item-macbook macbook']/a")
     macbook_air  = (By.XPATH, "//li[@class='chapternav-item chapternav-item-macbook-air macbook-air']/a")
     macbook_pro  = (By.XPATH, "//li[@class='chapternav-item chapternav-item-macbook-pro macbook-pro']/a")
-    imac_pro_buy = (By.XPATH, "//section[@class='fp-product product-imac-pro section theme-dark']//a[2]")
+    imac_pro_buy = (By.XPATH, "//a[@href='/us/shop/goto/buy_mac/imac_pro']")
 
 class ImacProBuyPageLocators:
-    favorites_button = (By.XPATH, "//button[@class='fv-link as-heart favorites  ']")
+    add_favorites_button    = (By.XPATH, "//button[@class='fv-link as-heart favorites  ']")
+    remove_favorites_button = (By.XPATH, "//button[@class='fv-link as-heart favorites as-heart-isadded ']")
+    configure               = (By.XPATH, "//button[@class='button as-button-large as-button-block']")
 
+class CustomizeImacProPageLocators:
+    add_to_bag = (By.XPATH, "//button[@name='add-to-cart']")
+
+class ImacProAccessoriesPageLocators:
+    review_bag = (By.XPATH, "//button[@class='merchandising button']")
 
 
 
