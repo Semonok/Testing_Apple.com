@@ -13,12 +13,14 @@ from Pages.bag_page import BagPage
 from Pages.iphone_page import IphonePage
 from Pages.mac_page import MacPage
 from Pages.imac_pro_buy_page import ImacProBuyPage
+from Pages.customize_imac_pro_page import CustomizeImacProPage
+from Pages.imac_pro_accessories_page import ImacProAccessoriesPage
 
 class Application:
 
     def __init__(self):
         self.driver = webdriver.Chrome()
-        self.driver.implicitly_wait(2)
+        self.driver.implicitly_wait(3)
         self.wait = WebDriverWait(self.driver, 5)
         self.myjson = JsonActions()
         self.main_page = MainPage(self.driver)
@@ -32,6 +34,8 @@ class Application:
         self.iphone_page = IphonePage(self.driver)
         self.mac_page = MacPage(self.driver)
         self.imac_pro_buy_page = ImacProBuyPage(self.driver)
+        self.customize_imac_pro_buy_page = CustomizeImacProPage(self.driver)
+        self.imac_pro_accessories_page = ImacProAccessoriesPage(self.driver)
 
     def home_page(self):
         self.driver.get("https://www.apple.com/")

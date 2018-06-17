@@ -17,3 +17,13 @@ class FavoritesPage():
         for i in self.driver.find_elements(*self.locators.item_name):
             a.append(i.text)
         return a
+
+    def remove_item(self, item):
+        self.driver.find_element(*self.locators.edit_remove).click()
+        i = 0
+        while i < len(self.favorites_items):
+            element = self.driver.find_element(*self.locators.item_name)
+            i+=1
+            if element.text == item:
+                element.find_element(*self.locators.select_item_relative_by_edit_name).click()
+            self.driver.find_element(*self.locators.edit_remove).click()

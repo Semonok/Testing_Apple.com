@@ -19,10 +19,9 @@ class AllPagesCommonHeader():
 
     def sign_out(self):
         self.open_settings_menu()
-        try:
+        if len(self.driver.find_elements(*self.locators.sign_out)) !=0:
             self.driver.find_element(*self.locators.sign_out).click()
-        except:
-            pass
+        self.wait.until_not(EC.presence_of_element_located(self.locators.sign_out))
 
     def open_login_page(self):
         self.open_settings_menu()
@@ -70,4 +69,12 @@ class AllPagesCommonHeader():
 
     def open_mac_page(self):
         self.driver.find_element(*self.locators.mac_page).click()
+
+    @property
+    def items_in_bag(self):
+        item_list = []
+        self.open_settings_menu()
+        for item in self.driver.find_elements(*self.locators.item_in_bag):
+            item_list.append(item.text)
+        return item_list
 

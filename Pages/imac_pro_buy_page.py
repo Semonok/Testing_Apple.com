@@ -11,4 +11,9 @@ class ImacProBuyPage():
         self.wait = WebDriverWait(driver, 5)
 
     def add_to_favorites(self):
-        self.driver.find_element(*self.locators.favorites_button).click()
+        if len(self.driver.find_elements(*self.locators.remove_favorites_button)) == 1:
+            self.driver.find_element(*self.locators.remove_favorites_button).click()
+        self.driver.find_element(*self.locators.add_favorites_button).click()
+
+    def open_customize_page(self):
+        self.driver.find_element(*self.locators.configure).click()
