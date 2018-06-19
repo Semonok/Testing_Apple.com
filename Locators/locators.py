@@ -80,6 +80,7 @@ class BagPageLocators:
     total_price       = (By.XPATH, "//div[@class='rs-summary-content  rs-summary-total']/div[@class='rs-summary-value']")
     remove            = (By.XPATH, '//button[@class="as-buttonlink rs-iteminfo-remove"]')
     continue_shopping = (By.XPATH, '//a[@class="button form-button button-secondary"]')
+    quantity_1_9      = (By.XPATH, '//select[@class="rs-quantity-dropdown form-dropdown"]')
 
 
 class IphonePageLocators:
