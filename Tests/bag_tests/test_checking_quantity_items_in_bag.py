@@ -7,5 +7,4 @@ def test_checking_quantity_items_in_bag_less_than_ten(driver):
     driver.imac_pro_accessories_page.review_bag()
     assert "iMac Pro" in driver.bag_page.items
     driver.bag_page.item_quantity_less_than_ten()
-    print(driver.bag_page.item_prices)
     assert driver.bag_page.item_prices == driver.bag_page.total_prices

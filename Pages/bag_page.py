@@ -2,7 +2,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from Locators.locators import BagPageLocators
 from selenium.webdriver.support.ui import Select
-import time
+from model import *
 
 
 class BagPage:
@@ -40,9 +40,10 @@ class BagPage:
 
     def item_quantity_less_than_ten(self):
         select = Select(self.driver.find_element(*self.locators.quantity_1_9))
+        one_item_price = self.item_price
         for i in range(1,10):
             select.select_by_value(str(i))
-            time.sleep(1)
+            self.wait.until(EC.text_to_be_present_in_element(self.locators.item_price,converting_price(one_item_price,i)))
             self.item_prices.append(self.item_price)
             self.total_prices.append(self.total_price)
 
