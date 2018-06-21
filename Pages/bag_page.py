@@ -3,7 +3,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from Locators.locators import BagPageLocators
 from selenium.webdriver.support.ui import Select
 from model import *
-
+from selenium.webdriver.common.keys import Keys
 
 class BagPage:
 
@@ -39,13 +39,42 @@ class BagPage:
 
 
     def item_quantity_less_than_ten(self):
-        select = Select(self.driver.find_element(*self.locators.quantity_1_9))
+        select = Select(self.driver.find_element(*self.locators.quantity_less_ten))
         one_item_price = self.item_price
         for i in range(1,10):
             select.select_by_value(str(i))
             self.wait.until(EC.text_to_be_present_in_element(self.locators.item_price,converting_price(one_item_price,i)))
             self.item_prices.append(self.item_price)
             self.total_prices.append(self.total_price)
+
+    @property
+    def current_item_quantity(self):
+        try:
+            return self.driver.find_element(*self.locators.quantity_less_ten).get_attribute("value")
+        except:
+            return self.driver.find_element(*self.locators.quantity_more_ten).get_attribute("value")
+
+    def choose_item_quantity(self,quantity):
+        try:
+            self.driver.find_element(*self.locators.quantity_more_ten).clear()
+            self.driver.find_element(*self.locators.quantity_more_ten).send_keys(quantity)
+            self.driver.find_element(*self.locators.quantity_more_ten).send_keys(Keys.ENTER)
+        except:
+            try:
+                Select(self.driver.find_element(*self.locators.quantity_less_ten)).select_by_value(str(quantity))
+            except:
+                self.driver.find_element(*self.locators.quantity_less_ten).click()
+                self.driver.find_element(*self.locators.quantity_less_ten).clear()
+                self.driver.find_element(*self.locators.quantity_less_ten).send_keys(quantity)
+                self.driver.find_element(*self.locators.quantity_less_ten).send_keys(Keys.ENTER)
+
+    @property
+    def quantity_field(self):
+        if len(self.driver.find_elements(*self.locators.quantity_more_ten)) != 0:
+            return "Input"
+        else:
+            return "Select"
+
 
 
 

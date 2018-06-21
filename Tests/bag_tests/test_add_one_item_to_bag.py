@@ -8,3 +8,4 @@ def test_add_item_to_bag(driver):
     driver.imac_pro_accessories_page.review_bag()
     assert "iMac Pro" in driver.bag_page.items
     assert driver.bag_page.item_price == driver.bag_page.total_price
+

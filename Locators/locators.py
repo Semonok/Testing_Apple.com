@@ -74,13 +74,14 @@ class FavoritesPageLocators:
 
 
 class BagPageLocators:
-    bag_main_text     = (By.XPATH, "//h1[@class='rs-bag-header']")
-    items_name        = (By.XPATH, "//h2[@class='rs-iteminfo-title']")
-    item_price        = (By.XPATH, "//p[@class='rs-iteminfo-price']")
-    total_price       = (By.XPATH, "//div[@class='rs-summary-content  rs-summary-total']/div[@class='rs-summary-value']")
-    remove            = (By.XPATH, '//button[@class="as-buttonlink rs-iteminfo-remove"]')
-    continue_shopping = (By.XPATH, '//a[@class="button form-button button-secondary"]')
-    quantity_1_9      = (By.XPATH, '//select[@class="rs-quantity-dropdown form-dropdown"]')
+    bag_main_text          = (By.XPATH, "//h1[@class='rs-bag-header']")
+    items_name             = (By.XPATH, "//h2[@class='rs-iteminfo-title']")
+    item_price             = (By.XPATH, "//p[@class='rs-iteminfo-price']")
+    total_price            = (By.XPATH, "//div[@class='rs-summary-content  rs-summary-total']/div[@class='rs-summary-value']")
+    remove                 = (By.XPATH, '//button[@class="as-buttonlink rs-iteminfo-remove"]')
+    continue_shopping      = (By.XPATH, '//a[@class="button form-button button-secondary"]')
+    quantity_less_ten      = (By.XPATH, '//select[@class="rs-quantity-dropdown form-dropdown"]')
+    quantity_more_ten      = (By.XPATH, '//input[@class="form-textbox form-textbox-entered"]')
 
 
 class IphonePageLocators:
