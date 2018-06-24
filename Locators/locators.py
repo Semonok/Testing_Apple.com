@@ -77,12 +77,21 @@ class BagPageLocators:
     bag_main_text          = (By.XPATH, "//h1[@class='rs-bag-header']")
     items_name             = (By.XPATH, "//h2[@class='rs-iteminfo-title']")
     item_price             = (By.XPATH, "//p[@class='rs-iteminfo-price']")
+    subtotal_price         = (By.XPATH, '//div[@data-autom="bagrs-summary-subtotalvalue"]')
+    summary_tax_value      = (By.XPATH, '//div[@data-autom="bagrs-summary-taxvalue"]')
     total_price            = (By.XPATH, "//div[@class='rs-summary-content  rs-summary-total']/div[@class='rs-summary-value']")
     remove                 = (By.XPATH, '//button[@class="as-buttonlink rs-iteminfo-remove"]')
     continue_shopping      = (By.XPATH, '//a[@class="button form-button button-secondary"]')
     quantity_less_ten      = (By.XPATH, '//select[@class="rs-quantity-dropdown form-dropdown"]')
     quantity_more_ten      = (By.XPATH, '//input[@class="form-textbox form-textbox-entered"]')
-
+    enter_zip_code         = (By.XPATH, '//button[@id="rs-summary-enterzipcode"]')
+    zip_code_field         = (By.XPATH, '//input[@id="shoppingCart.summary.taxCalculator.address.postalCode"]')
+    zip_code_apply         = (By.XPATH, '//button[@data-autom="bag-zipcode-apply"]')
+    zip_code_cancel        = (By.XPATH, '//button[@id="rr-toggle-shoppingCart.summary.taxCalculator.address._editing"]')
+    zip_code_error         = (By.XPATH, '//div[@id="shoppingCart.summary.taxCalculator.address.postalCode-error"]')
+    applecare_plus_add     = (By.XPATH, '//button[@data-autom="bag-inlineattach-add"]')
+    applecare_plus_price   = (By.XPATH, '//p[@class="rs-iteminfo-child-price"]')
+    applecare_plus_remove  = (By.XPATH, '//p[@class="rs-iteminfo-child-price"]/../../div/button')
 
 class IphonePageLocators:
     iphone_x    = (By.XPATH, "//li[@class='chapternav-item chapternav-item-overview']/a")
