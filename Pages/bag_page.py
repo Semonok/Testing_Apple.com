@@ -1,6 +1,7 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from Locators.locators import BagPageLocators
+from Locators.locators import GiftCardBlockLocators
 from selenium.webdriver.support.ui import Select
 from model import ConvertingPrice
 from selenium.webdriver.common.keys import Keys
@@ -13,6 +14,7 @@ class BagPage:
         self.driver = driver
         self.wait = WebDriverWait(driver, 3)
         self.locators = BagPageLocators
+        self.gift_locators = GiftCardBlockLocators
         self.myjson = JsonActions()
         self.convert = ConvertingPrice()
         self.item_prices = []
@@ -29,6 +31,13 @@ class BagPage:
         for item in self.driver.find_elements(*self.locators.items_name):
             item_list.append(item.text)
         return item_list
+
+    @property
+    def quantity(self):
+        try:
+            return self.driver.find_element(*self.locators.quantity_less_ten).get_attribute("value")
+        except:
+            return self.driver.find_element(*self.locators.quantity_more_ten).get_attribute("value")
 
     def remove_item(self):
         self.driver.find_element(*self.locators.remove).click()
@@ -78,18 +87,20 @@ class BagPage:
             return self.driver.find_element(*self.locators.quantity_more_ten).get_attribute("value")
 
     def choose_item_quantity(self,quantity):
-        try:
+        if len(self.driver.find_elements(*self.locators.quantity_more_ten)) == 0:
+            if quantity in range(1,10) or quantity is '10+':
+                Select(self.driver.find_element(*self.locators.quantity_less_ten)).select_by_value(str(quantity))
+            else:
+                Select(self.driver.find_element(*self.locators.quantity_less_ten)).select_by_value("10+")
+                self.driver.find_element(*self.locators.quantity_more_ten).clear()
+                self.driver.find_element(*self.locators.quantity_more_ten).send_keys(quantity)
+                self.driver.find_element(*self.locators.quantity_more_ten).send_keys(Keys.ENTER)
+        else:
+            self.driver.find_element(*self.locators.quantity_more_ten).click()
             self.driver.find_element(*self.locators.quantity_more_ten).clear()
             self.driver.find_element(*self.locators.quantity_more_ten).send_keys(quantity)
             self.driver.find_element(*self.locators.quantity_more_ten).send_keys(Keys.ENTER)
-        except:
-            try:
-                Select(self.driver.find_element(*self.locators.quantity_less_ten)).select_by_value(str(quantity))
-            except:
-                self.driver.find_element(*self.locators.quantity_less_ten).click()
-                self.driver.find_element(*self.locators.quantity_less_ten).clear()
-                self.driver.find_element(*self.locators.quantity_less_ten).send_keys(quantity)
-                self.driver.find_element(*self.locators.quantity_less_ten).send_keys(Keys.ENTER)
+
 
     @property
     def quantity_field(self):
@@ -130,6 +141,37 @@ class BagPage:
             return None
         else:
             return self.driver.find_element(*self.locators.applecare_plus_price).text
+
+    def open_gift_card(self):
+        self.driver.find_element(*self.locators.gift_message_add).click()
+
+    def edit_gift_card(self):
+        self.driver.find_element(*self.locators.gift_message_edit).click()
+
+    @property
+    def gift_message_text(self):
+        self.wait.until(EC.invisibility_of_element_located(self.gift_locators.gift_header))
+        try:
+            return self.driver.find_element(*self.locators.gift_message_text).text
+        except:
+            return None
+
+    @property
+    def alert_message(self):
+        try:
+            self.wait.until(EC.presence_of_element_located(self.locators.alert_message))
+            return self.driver.find_element(*self.locators.alert_message).text
+        except:
+            return "Alert message is not presence"
+
+    @property
+    def alert_message_is_not_presence(self):
+        try:
+            self.wait.until_not(EC.presence_of_element_located(self.locators.alert_message))
+            return True
+        except:
+            return "Alert message is not presence:", self.driver.find_element(*self.locators.alert_message).text
+
 
 
 

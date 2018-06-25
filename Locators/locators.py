@@ -92,6 +92,10 @@ class BagPageLocators:
     applecare_plus_add     = (By.XPATH, '//button[@data-autom="bag-inlineattach-add"]')
     applecare_plus_price   = (By.XPATH, '//p[@class="rs-iteminfo-child-price"]')
     applecare_plus_remove  = (By.XPATH, '//p[@class="rs-iteminfo-child-price"]/../../div/button')
+    gift_message_add       = (By.XPATH, '//button[@data-autom="bag-gifting-add"]')
+    gift_message_edit      = (By.XPATH, '//button[@data-autom="bag-giftmessage-edit"]')
+    gift_message_text      = (By.XPATH, '//p[@class="rs-iteminfo-child-tagline rs-iteminfo-gifting-msg"]')
+    alert_message = (By.XPATH, "//div[@class='form-alert is-error']")
 
 class IphonePageLocators:
     iphone_x    = (By.XPATH, "//li[@class='chapternav-item chapternav-item-overview']/a")
@@ -119,6 +123,18 @@ class CustomizeImacProPageLocators:
 
 class ImacProAccessoriesPageLocators:
     review_bag = (By.XPATH, "//button[@class='merchandising button']")
+
+class GiftCardBlockLocators:
+    gift_header        = (By.XPATH, '//h2[@class="rs-giftoverlay-header"]')
+    gift_none          = (By.XPATH, "//input[@data-autom='bag-giftoptions-none']"
+                                    "/..//div[@class='form-choiceselectorlabel-twocol']")
+    gift_message       = (By.XPATH, "//input[@data-autom='bag-giftoptions-message']"
+                                    "/..//div[@class='form-choiceselectorlabel-twocol']")
+    gift_message_text  = (By.XPATH, "//textarea[@data-autom='bag-giftoptions-messagetext']")
+    gift_save_button   = (By.XPATH, "//button[@data-autom='bag-giftoptions-save-button']")
+    gift_cancel_button = (By.XPATH, "//button[@data-autom='bag-giftoptions-cancel-button']")
+    gift_error_message = (By.XPATH, "//div[@class='form-message-wrapper']")
+    gift_overlay_text  = (By.XPATH, "//span[@class='rs-giftoverlay-inputmsg']")
 
 
 

@@ -14,7 +14,7 @@ def test_checking_quantity_items_in_bag_less_than_ten(driver):
     assert driver.bag_page.item_prices == driver.bag_page.subtotal_prices
 
 def test_cheking_quantity_items_in_bag_10_and_opening_new_form(driver):
-    driver.bag_page.choose_item_quantity("10+")
+    driver.bag_page.choose_item_quantity('10+')
     assert driver.bag_page.quantity_field == "Input"
 
 def test_cheking_invalid_quantity_in_bag(driver):
@@ -25,11 +25,11 @@ def test_cheking_invalid_quantity_in_bag(driver):
 
 def test_checking_valid_quantity_in_input_field(driver):
     driver.bag_page.choose_item_quantity(1)
-    assert driver.bag_page.current_item_quantity == "11"
-    driver.bag_page.choose_item_quantity(11)
-    assert driver.bag_page.current_item_quantity == "999"
-    driver.bag_page.choose_item_quantity(999)
     assert driver.bag_page.current_item_quantity == "1"
+    driver.bag_page.choose_item_quantity(11)
+    assert driver.bag_page.current_item_quantity == "11"
+    driver.bag_page.choose_item_quantity(999)
+    assert driver.bag_page.current_item_quantity == "999"
 
 def test_del_item_from_bag(driver):
     driver.bag_page.remove_item()

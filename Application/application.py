@@ -15,6 +15,7 @@ from Pages.mac_page import MacPage
 from Pages.imac_pro_buy_page import ImacProBuyPage
 from Pages.customize_imac_pro_page import CustomizeImacProPage
 from Pages.imac_pro_accessories_page import ImacProAccessoriesPage
+from Pages.gift_card_block import GiftCardBlock
 
 class Application:
 
@@ -36,6 +37,7 @@ class Application:
         self.imac_pro_buy_page = ImacProBuyPage(self.driver)
         self.customize_imac_pro_buy_page = CustomizeImacProPage(self.driver)
         self.imac_pro_accessories_page = ImacProAccessoriesPage(self.driver)
+        self.gift_card_block = GiftCardBlock(self.driver)
 
     def home_page(self):
         self.driver.get("https://www.apple.com/")
