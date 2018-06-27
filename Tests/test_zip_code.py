@@ -15,3 +15,8 @@ def test_valid_zip_code(driver):
     assert driver.bag_page.tax_price is not None
     assert driver.bag_page.summary_price(driver.bag_page.tax_price, driver.bag_page.subtotal_price)\
            == driver.bag_page.total_price
+
+def test_store_menu(driver):
+    driver.bag_page.open_stores_menu()
+    assert driver.bag_page.stores_menu_header == 'Select a location'
+    driver.bag_page.close_stores_menu()
