@@ -16,6 +16,7 @@ from Pages.imac_pro_buy_page import ImacProBuyPage
 from Pages.customize_imac_pro_page import CustomizeImacProPage
 from Pages.imac_pro_accessories_page import ImacProAccessoriesPage
 from Pages.gift_card_block import GiftCardBlock
+from Pages.check_out_page import CheckOutPage
 
 class Application:
 
@@ -38,6 +39,7 @@ class Application:
         self.customize_imac_pro_buy_page = CustomizeImacProPage(self.driver)
         self.imac_pro_accessories_page = ImacProAccessoriesPage(self.driver)
         self.gift_card_block = GiftCardBlock(self.driver)
+        self.check_out_page = CheckOutPage(self.driver)
 
     def home_page(self):
         self.driver.get("https://www.apple.com/")
@@ -67,5 +69,8 @@ class Application:
             return self.myjson.read_json_file("login_data.json")
         except:
             print("File not found, check 'data' directory and found jsonfile with 'sign in' data")
+
+    def save_screenshot(self, i):
+        self.driver.get_screenshot_as_file(r"C:\Users\Home\Downloads\screen"+str(i)+".png")
 
 

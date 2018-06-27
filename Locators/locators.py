@@ -54,6 +54,7 @@ class LoginPageLocators:
     password_error = (By.XPATH, "//div[@id='loginHome.customerLogin.password-error']")
     confirm_button = (By.XPATH, "//button[@id='signin-button-submit']")
     main_error     = (By.XPATH, "//div[@class='form-alert is-error']")
+    guest_checkout = (By.XPATH, "//button[@id='guest-checkout']")
 
 
 class CountryListPageLocators:
@@ -81,7 +82,7 @@ class BagPageLocators:
     summary_tax_value      = (By.XPATH, '//div[@data-autom="bagrs-summary-taxvalue"]')
     total_price            = (By.XPATH, "//div[@class='rs-summary-content  rs-summary-total']/div[@class='rs-summary-value']")
     remove                 = (By.XPATH, '//button[@class="as-buttonlink rs-iteminfo-remove"]')
-    continue_shopping      = (By.XPATH, '//a[@class="button form-button button-secondary"]')
+    continue_shopping      = (By.XPATH, '//a[@data-autom="bag-empty-continueshopping-button"]')
     quantity_less_ten      = (By.XPATH, '//select[@class="rs-quantity-dropdown form-dropdown"]')
     quantity_more_ten      = (By.XPATH, '//input[@class="form-textbox form-textbox-entered"]')
     enter_zip_code         = (By.XPATH, '//button[@id="rs-summary-enterzipcode"]')
@@ -95,7 +96,17 @@ class BagPageLocators:
     gift_message_add       = (By.XPATH, '//button[@data-autom="bag-gifting-add"]')
     gift_message_edit      = (By.XPATH, '//button[@data-autom="bag-giftmessage-edit"]')
     gift_message_text      = (By.XPATH, '//p[@class="rs-iteminfo-child-tagline rs-iteminfo-gifting-msg"]')
-    alert_message = (By.XPATH, "//div[@class='form-alert is-error']")
+    alert_message          = (By.XPATH, "//div[@class='form-alert is-error']")
+    show_products_details  = (By.XPATH, '//button[@class="rr-toggle  as-buttonlink rs-iteminfo-link"]')
+    hide_products_details  = (By.XPATH, '//button[@class="rr-toggle rr-toggle-isexpanded as-buttonlink rs-iteminfo-link"]')
+    add_first_extra_item   = (By.XPATH, '//div[@class="column large-6 large-pull-6 small-pull-0 small-12"]//button')
+    notification_banner    = (By.XPATH, "//div[@class='rs-notificationbanner-message as-l-container']//p/span")
+    undo_remove_item       = (By.XPATH, "//button[@data-autom='bag-item-remove-undo']")
+    more_stores            = (By.XPATH, "//button[@data-autom='bag-seemorestores-link']")
+    select_location        = (By.XPATH, "//h2[@class='rs-storelocator-header']")
+    close_stores_menu      = (By.XPATH, "//div[@class='as-store-locator as-storelocator-overlay-content']"
+                                        "//button[@class='as-overlay-close']")
+    check_out              = (By.XPATH, "//button[@data-autom='bag-checkout-button']")
 
 class IphonePageLocators:
     iphone_x    = (By.XPATH, "//li[@class='chapternav-item chapternav-item-overview']/a")
@@ -135,6 +146,28 @@ class GiftCardBlockLocators:
     gift_cancel_button = (By.XPATH, "//button[@data-autom='bag-giftoptions-cancel-button']")
     gift_error_message = (By.XPATH, "//div[@class='form-message-wrapper']")
     gift_overlay_text  = (By.XPATH, "//span[@class='rs-giftoverlay-inputmsg']")
+
+class CheckOutPageLocators:
+    show_order_summary      = (By.XPATH, "//button[@id='companionbar-button']")
+    order_menu_total_price  = (By.XPATH, "//li[@class='row rs-companionbar-total-row']"
+                                         "//span[@class='column large-6 large-last as-text-right']")
+    order_menu_header       = (By.XPATH, "//div[@class='rs-companionbar-ordertotal']//div/h2")
+    close_order_menu        = (By.XPATH, "//button[@class='as-overlay-close rs-companionbar-icon-close']")
+    edit_bag                = (By.XPATH, "//button[@class='as-buttonlink large-last']")
+    summary_price           = (By.XPATH, "//button[@id='companionbar-button']/span/span[2]")
+    delivery                = (By.XPATH, "//label[@for='fulfillmentOptionButtonGroup0']")
+    pick_up                 = (By.XPATH, "//label[@for='fulfillmentOptionButtonGroup1']")
+    delivery_header         = (By.XPATH, "//h2[@class='rs-fulfillment-sectiontitle']/span")
+    hidden_header           = (By.XPATH, "//h2[@class='rs-fulfillment-sectiontitle']/span/span")
+    pick_up_header          = (By.XPATH, "//legend[@class='rs-fulfillment-grouplabel']")
+    delivery_product        = (By.XPATH, "//span[@class='row rs-fulfillment-product-name']")
+    delivery_tommorow       = (By.XPATH, "//input[@data-autom='delivery-option-SO']/.."
+                                   "//span[@class='form-choiceselectorlabel-twocolleft']")
+    delivery_tommorow_price = (By.XPATH, "//input[@data-autom='delivery-option-SO']/.."
+                                   "//span[@class='form-choiceselectorlabel-twocolright']/div[1]")
+    pick_up_zip_message     = (By.XPATH, "//h2[@class='rs-fulfillment-pickup-coldstate-header large-6 small-12']")
+    secure_message          = (By.XPATH, "//h2[@id='checkout.companionBar.showSecureCheckoutOverlay-label']")
+    secure_message_continue = (By.XPATH, "//a[@class='button form-button rs-securecheckout-button']")
 
 
 
