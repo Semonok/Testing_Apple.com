@@ -19,6 +19,9 @@ def test_sign_in_invalid_password(driver):
 
 def test_sign_in_valid_login_and_password(driver):
     driver.login_page.sign_in(driver.login_data["correct_login"],driver.login_data["correct_password"])
-    driver.login_page.success_login()
-    assert driver.header_block.which_user_sign_in() == "Test"
+    assert driver.current_page('Home page') == True
+    assert driver.header_block.which_user_sign_in == "Test"
+
+def test_sing_out(driver):
     driver.header_block.sign_out()
+    assert driver.header_block.which_user_sign_in == None
