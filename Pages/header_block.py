@@ -32,9 +32,13 @@ class AllPagesCommonHeader():
             self.open_settings_menu()
             self.driver.find_element(*self.locators.sign_in_page).click()
 
+    @property
     def which_user_sign_in(self):
         self.open_settings_menu()
-        return self.driver.find_element(*self.locators.sign_out).text[9:]
+        if len(self.driver.find_elements(*self.locators.sign_out)) == 1:
+            return self.driver.find_element(*self.locators.sign_out).text[9:]
+        else:
+            return None
 
     def open_favorites_page(self):
         self.open_settings_menu()
