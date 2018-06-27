@@ -17,6 +17,9 @@ class LoginPage:
         self.driver.find_element(*LoginPageLocators.password).send_keys(password)
         self.driver.find_element(*LoginPageLocators.confirm_button).click()
 
+    def guest_login(self):
+        self.driver.find_element(*LoginPageLocators.guest_checkout).click()
+
     def success_login(self):
         self.wait.until(EC.url_to_be("https://www.apple.com/"))
 
