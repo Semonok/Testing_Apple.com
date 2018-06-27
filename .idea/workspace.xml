@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caf9b7a0-0cbc-4208-9eaf-a4d45141f22b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Pages/gift_card_block.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Tests/test_gift_card.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Pages/check_out_page.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Tests/test_order_options.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Application/application.py" afterPath="$PROJECT_DIR$/Application/application.py" />
       <change beforePath="$PROJECT_DIR$/Locators/locators.py" afterPath="$PROJECT_DIR$/Locators/locators.py" />
       <change beforePath="$PROJECT_DIR$/Pages/bag_page.py" afterPath="$PROJECT_DIR$/Pages/bag_page.py" />
+      <change beforePath="$PROJECT_DIR$/Pages/header_block.py" afterPath="$PROJECT_DIR$/Pages/header_block.py" />
+      <change beforePath="$PROJECT_DIR$/Pages/login_page.py" afterPath="$PROJECT_DIR$/Pages/login_page.py" />
+      <change beforePath="$PROJECT_DIR$/Tests/bag_tests/test_zip_code.py" afterPath="$PROJECT_DIR$/Tests/test_zip_code.py" />
       <change beforePath="$PROJECT_DIR$/Tests/test_bag_tests.py" afterPath="$PROJECT_DIR$/Tests/test_bag_tests.py" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_sign_in.py" afterPath="$PROJECT_DIR$/Tests/test_sign_in.py" />
+      <change beforePath="$PROJECT_DIR$/data/pages_title_standart.json" afterPath="$PROJECT_DIR$/data/pages_title_standart.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,33 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="locators.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Locators/locators.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="133" column="4" lean-forward="false" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer_block.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Pages/footer_block.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#64#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="bag_page.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pages/bag_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="163" column="15" lean-forward="true" selection-start-line="163" selection-start-column="15" selection-end-line="163" selection-end-column="15" />
+            <state relative-caret-position="51">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -56,11 +39,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_gift_card.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/test_gift_card.py">
+      <file leaf-file-name="check_out_page.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pages/check_out_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="25" column="64" lean-forward="false" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+            <state relative-caret-position="578">
+              <caret line="39" column="79" lean-forward="false" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
+              <folding>
+                <element signature="e#0#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -69,8 +64,8 @@
       <file leaf-file-name="application.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/application.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
-              <caret line="39" column="56" lean-forward="false" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+            <state relative-caret-position="918">
+              <caret line="72" column="33" lean-forward="false" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -78,14 +73,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gift_card_block.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Pages/gift_card_block.py">
+      <file leaf-file-name="locators.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Locators/locators.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#64#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="901">
+              <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_page.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pages/login_page.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_order_options.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/test_order_options.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="38" column="50" lean-forward="false" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pages_title_standart.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/pages_title_standart.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,15 +122,17 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>remove</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Pages/footer_block.py" />
-        <option value="$PROJECT_DIR$/data/parsing_url_title.py" />
-        <option value="$PROJECT_DIR$/data/url_title.json" />
         <option value="$PROJECT_DIR$/ElementActions/action_elements.py" />
         <option value="$PROJECT_DIR$/Tests/test_check_different_country_title.py" />
         <option value="$PROJECT_DIR$/data/pages_url_title_standart.json" />
@@ -116,8 +141,6 @@
         <option value="$PROJECT_DIR$/data/login_data.json" />
         <option value="$PROJECT_DIR$/Pages/favorite_page.py" />
         <option value="$PROJECT_DIR$/Pages/main_page.py" />
-        <option value="$PROJECT_DIR$/Pages/login_page.py" />
-        <option value="$PROJECT_DIR$/Tests/test_sign_in.py" />
         <option value="$PROJECT_DIR$/Tests/test_checking_empty_favorites_list.py" />
         <option value="$PROJECT_DIR$/Pages/BagPage.py" />
         <option value="$PROJECT_DIR$/Tests/test_empty_bag_page.py" />
@@ -125,7 +148,6 @@
         <option value="$PROJECT_DIR$/Pages/iphone_page.py" />
         <option value="$PROJECT_DIR$/Pages/mac_page.py" />
         <option value="$PROJECT_DIR$/Tests/test_add_to_favorite.py" />
-        <option value="$PROJECT_DIR$/data/pages_title_standart.json" />
         <option value="$PROJECT_DIR$/Tests/test_favorite_unsigning_up_user.py" />
         <option value="$PROJECT_DIR$/Tests/test_add_to_favorite_unsigned_user.py" />
         <option value="$PROJECT_DIR$/Tests/test_add_to_favorite_signed_user.py" />
@@ -139,7 +161,6 @@
         <option value="$PROJECT_DIR$/Pages/imac_pro_accessories_page_locators.py" />
         <option value="$PROJECT_DIR$/Pages/imac_pro_accessories_page.py" />
         <option value="$PROJECT_DIR$/Tests/bag_tests/test_add_one_item_to_bag (checking_setting_menu).py" />
-        <option value="$PROJECT_DIR$/Pages/header_block.py" />
         <option value="$PROJECT_DIR$/Tests/bag_tests/test_save_item_in_bag_for_signed_up_user.py" />
         <option value="$PROJECT_DIR$/Tests/bag_tests/test_empty_bag_page.py" />
         <option value="$PROJECT_DIR$/Tests/bag_tests/test_del_item_from_bag.py" />
@@ -148,14 +169,21 @@
         <option value="$PROJECT_DIR$/data/zip_codes.json" />
         <option value="$PROJECT_DIR$/Tests/bag_tests/test_checking_quantity_items_in_bag.py" />
         <option value="$PROJECT_DIR$/Tests/bag_tests/test_zip_code.py" />
-        <option value="$PROJECT_DIR$/model.py" />
         <option value="$PROJECT_DIR$/Tests/test_applecare.py" />
-        <option value="$PROJECT_DIR$/Application/application.py" />
-        <option value="$PROJECT_DIR$/Tests/test_bag_tests.py" />
-        <option value="$PROJECT_DIR$/Locators/locators.py" />
-        <option value="$PROJECT_DIR$/Pages/bag_page.py" />
         <option value="$PROJECT_DIR$/Tests/test_gift_card.py" />
         <option value="$PROJECT_DIR$/Pages/gift_card_block.py" />
+        <option value="$PROJECT_DIR$/Tests/test_bag_tests.py" />
+        <option value="$PROJECT_DIR$/Tests/test_zip_code.py" />
+        <option value="$PROJECT_DIR$/Pages/header_block.py" />
+        <option value="$PROJECT_DIR$/Tests/test_sign_in.py" />
+        <option value="$PROJECT_DIR$/Pages/bag_page.py" />
+        <option value="$PROJECT_DIR$/Pages/check_out_page.py" />
+        <option value="$PROJECT_DIR$/data/pages_title_standart.json" />
+        <option value="$PROJECT_DIR$/Application/application.py" />
+        <option value="$PROJECT_DIR$/Locators/locators.py" />
+        <option value="$PROJECT_DIR$/Pages/login_page.py" />
+        <option value="$PROJECT_DIR$/Tests/test_order_options.py" />
+        <option value="$PROJECT_DIR$/model.py" />
       </list>
     </option>
   </component>
@@ -219,12 +247,18 @@
             <path>
               <item name="Testing_Apple.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="Testing_Apple.com" type="462c0819:PsiDirectoryNode" />
-              <item name="Locators" type="462c0819:PsiDirectoryNode" />
+              <item name="Pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Testing_Apple.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="Testing_Apple.com" type="462c0819:PsiDirectoryNode" />
               <item name="Tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Testing_Apple.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Testing_Apple.com" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+              <item name="favorite_tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -237,6 +271,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Home\Documents\GitHub\Testing_Apple.com\Tests" />
       <recent name="C:\Users\Home\Documents\GitHub\Testing_Apple.com\Tests\bag_tests" />
       <recent name="C:\Users\Home\Documents\GitHub\Testing_Apple.com\Tests\favorite_tests" />
       <recent name="C:\Users\Home\Documents\GitHub\Testing_Apple.com" />
@@ -255,7 +290,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in test_gift_card.py">
+  <component name="RunManager" selected="Python tests.py.test in test_order_options.py">
     <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -274,21 +309,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="py.test in test_applecare.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Testing_Apple.com" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/test_applecare.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
     <configuration name="py.test in test_bag_tests.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -304,7 +324,7 @@
       <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/test_bag_tests.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="py.test in test_gift_card.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test in test_order_options.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -316,7 +336,22 @@
       <module name="Testing_Apple.com" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/test_gift_card.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/test_order_options.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration name="py.test in test_sign_in.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Testing_Apple.com" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/test_sign_in.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration name="py.test in test_zip_code.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -324,30 +359,30 @@
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests/bag_tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Testing_Apple.com" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/bag_tests/test_zip_code.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/test_zip_code.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.model" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_bag_tests.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_zip_code.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_applecare.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_gift_card.py" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_bag_tests.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_zip_code.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_sign_in.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_order_options.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python.model" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_gift_card.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_bag_tests.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_applecare.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_order_options.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python.model" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_sign_in.py" />
         <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_zip_code.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python.model" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_bag_tests.py" />
       </list>
     </recent_temporary>
   </component>
@@ -368,35 +403,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_test_gift_card_py - 2018.06.25 at 19h 55m 29s.xml">
-      <configuration name="py.test in test_gift_card.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_order_options_py - 2018.06.27 at 19h 29m 33s.xml">
+      <configuration name="py.test in test_order_options.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_gift_card_py - 2018.06.25 at 20h 06m 47s.xml">
-      <configuration name="py.test in test_gift_card.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_order_options_py - 2018.06.27 at 19h 31m 40s.xml">
+      <configuration name="py.test in test_order_options.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_gift_card_py - 2018.06.25 at 20h 08m 53s.xml">
-      <configuration name="py.test in test_gift_card.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_order_options_py - 2018.06.27 at 20h 26m 03s.xml">
+      <configuration name="py.test in test_order_options.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_gift_card_py - 2018.06.25 at 20h 10m 03s.xml">
-      <configuration name="py.test in test_gift_card.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_order_options_py - 2018.06.27 at 20h 29m 40s.xml">
+      <configuration name="py.test in test_order_options.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_gift_card_py - 2018.06.25 at 20h 11m 37s.xml">
-      <configuration name="py.test in test_gift_card.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_order_options_py - 2018.06.27 at 20h 38m 29s.xml">
+      <configuration name="py.test in test_order_options.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_gift_card_py - 2018.06.25 at 20h 46m 54s.xml">
-      <configuration name="py.test in test_gift_card.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_order_options_py - 2018.06.27 at 20h 38m 30s.xml">
+      <configuration name="py.test in test_order_options.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_gift_card_py - 2018.06.25 at 20h 48m 02s.xml">
-      <configuration name="py.test in test_gift_card.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_order_options_py - 2018.06.27 at 20h 39m 08s.xml">
+      <configuration name="py.test in test_order_options.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_gift_card_py - 2018.06.25 at 21h 13m 59s.xml">
-      <configuration name="py.test in test_gift_card.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_order_options_py - 2018.06.27 at 20h 50m 30s.xml">
+      <configuration name="py.test in test_order_options.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_gift_card_py - 2018.06.25 at 21h 31m 03s.xml">
-      <configuration name="py.test in test_gift_card.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_order_options_py - 2018.06.27 at 20h 54m 03s.xml">
+      <configuration name="py.test in test_order_options.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_gift_card_py - 2018.06.25 at 21h 32m 41s.xml">
-      <configuration name="py.test in test_gift_card.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_order_options_py - 2018.06.27 at 21h 01m 19s.xml">
+      <configuration name="py.test in test_order_options.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -412,22 +447,22 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24925596" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24553572" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.49702382" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24925596" sideWeight="0.50570965" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -437,17 +472,17 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24925596" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24553572" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24925596" sideWeight="0.50570965" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -460,22 +495,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Locators/locators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PageObject/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/test_confirm_region.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Page_helpers/main_page_helper.py" />
     <entry file="file://$PROJECT_DIR$/default_country.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -506,20 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/countries_url_title_standart.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/test_checking_presence_of_quick_links.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/favorite_tests/test_checking_empty_favorites_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -534,31 +539,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/test_confirm_region.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/test_apple_job.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/pages_title_standart.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/favorite_tests/test_favorite_unsigning_up_user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -573,13 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/test_sign_in.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -618,13 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/zip_codes.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/bag_tests/test_del_item_from_bag.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -646,27 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="61" lean-forward="true" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/bag_tests/test_zip_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/country_list_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pages/customize_imac_pro_page.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -678,13 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/header_block.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-712">
-          <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -706,13 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="45" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/login_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -741,79 +676,181 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="546" column="7" lean-forward="false" selection-start-line="546" selection-start-column="7" selection-end-line="546" selection-end-column="7" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/gift_card_block.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/test_confirm_region.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/test_checking_presence_of_quick_links.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/footer_block.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/test_gift_card.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="64" lean-forward="false" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/test_applecare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="6" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="221">
+          <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/zip_codes.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/test_zip_code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/header_block.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/test_bag_tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="153">
+          <caret line="9" column="46" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/test_sign_in.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="241" column="0" lean-forward="false" selection-start-line="241" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/favorite_tests/test_favorite_unsigning_up_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/country_list_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="22" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/bag_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/check_out_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="39" column="79" lean-forward="false" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/countries_url_title_standart.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/application.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="39" column="56" lean-forward="false" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+        <state relative-caret-position="918">
+          <caret line="72" column="33" lean-forward="false" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/footer_block.py">
+    <entry file="file://$PROJECT_DIR$/data/pages_title_standart.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Locators/locators.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="133" column="4" lean-forward="false" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="4" />
+        <state relative-caret-position="901">
+          <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/test_gift_card.py">
+    <entry file="file://$PROJECT_DIR$/Pages/login_page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="25" column="64" lean-forward="false" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+        <state relative-caret-position="289">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/bag_page.py">
+    <entry file="file://$PROJECT_DIR$/Tests/test_order_options.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="163" column="15" lean-forward="true" selection-start-line="163" selection-start-column="15" selection-end-line="163" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="460">
+          <caret line="38" column="50" lean-forward="false" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/gift_card_block.py">
+    <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>

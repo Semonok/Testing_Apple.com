@@ -12,7 +12,7 @@ class BagPage:
 
     def __init__(self, driver):
         self.driver = driver
-        self.wait = WebDriverWait(driver, 3)
+        self.wait = WebDriverWait(driver, 5)
         self.locators = BagPageLocators
         self.gift_locators = GiftCardBlockLocators
         self.myjson = JsonActions()
@@ -33,6 +33,10 @@ class BagPage:
         return item_list
 
     @property
+    def item(self):
+        return self.driver.find_element(*self.locators.items_name).text
+
+    @property
     def quantity(self):
         try:
             return self.driver.find_element(*self.locators.quantity_less_ten).get_attribute("value")
@@ -40,11 +44,21 @@ class BagPage:
             return self.driver.find_element(*self.locators.quantity_more_ten).get_attribute("value")
 
     def remove_item(self):
+        item = self.driver.find_element(*self.locators.items_name)
         self.driver.find_element(*self.locators.remove).click()
+        self.wait.until(EC.staleness_of(item))
 
     @property
     def item_price(self):
         return self.driver.find_element(*self.locators.item_price).text
+
+    @property
+    def items_prices(self):
+        prices = []
+        for i in self.driver.find_elements(*self.locators.item_price):
+            prices.append(i.text)
+        return prices
+
 
     @property
     def subtotal_price(self):
@@ -172,6 +186,34 @@ class BagPage:
         except:
             return "Alert message is not presence:", self.driver.find_element(*self.locators.alert_message).text
 
+    def continue_shopping(self):
+        self.driver.find_element(*self.locators.continue_shopping).click()
+
+    def add_second_item(self):
+        self.driver.find_element(*self.locators.add_first_extra_item).click()
+        self.wait.until_not(EC.presence_of_element_located(self.locators.add_first_extra_item))
+
+    @property
+    def notification_banner(self):
+        self.wait.until(EC.presence_of_element_located(self.locators.notification_banner))
+        return self.driver.find_element(*self.locators.notification_banner).text
+
+    def return_product_in_bag(self):
+        self.driver.find_element(*self.locators.undo_remove_item).click()
+
+    def open_stores_menu(self):
+        self.driver.find_element(*self.locators.more_stores).click()
+        self.wait.until(EC.presence_of_element_located(self.locators.select_location))
+
+    @property
+    def stores_menu_header(self):
+        return self.driver.find_element(*self.locators.select_location).text
+
+    def close_stores_menu(self):
+        self.driver.find_element(*self.locators.close_stores_menu).click()
+
+    def check_out(self):
+        self.driver.find_element(*self.locators.check_out).click()
 
 
 
