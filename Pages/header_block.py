@@ -2,6 +2,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from Locators.locators import HeaderLocators
+from selenium.webdriver.common.action_chains import ActionChains
 
 class AllPagesCommonHeader():
 

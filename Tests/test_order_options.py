@@ -1,4 +1,3 @@
-import time
 
 def test_check_out_unsigned_user(driver):
     driver.header_block.open_mac_page()

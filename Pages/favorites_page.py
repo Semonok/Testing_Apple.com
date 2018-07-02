@@ -1,5 +1,8 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from Locators.locators import FavoritesPageLocators
+from selenium.webdriver.support import expected_conditions as EC
+import time
+
 class FavoritesPage():
 
     def __init__(self, driver):
@@ -20,10 +23,10 @@ class FavoritesPage():
 
     def remove_item(self, item):
         self.driver.find_element(*self.locators.edit_remove).click()
-        i = 0
-        while i < len(self.favorites_items):
-            element = self.driver.find_element(*self.locators.item_name)
-            i+=1
-            if element.text == item:
-                element.find_element(*self.locators.select_item_relative_by_edit_name).click()
+        element = self.driver.find_element(*self.locators.item_name)
+        if element.text == item:
+            element.find_element(*self.locators.select_item_relative_by_edit_name).click()
             self.driver.find_element(*self.locators.edit_remove).click()
+            self.wait.until(EC.staleness_of(element))
+        else:
+            raise Exception("This item not present in favorites")

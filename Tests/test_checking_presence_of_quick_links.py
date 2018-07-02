@@ -1,3 +1,5 @@
+import pytest
+
 # Should be 5 quick links in search menu
 def test_checking_presence_of_quick_links(driver):
     driver.header_block.open_search()
