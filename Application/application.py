@@ -20,8 +20,15 @@ from Pages.check_out_page import CheckOutPage
 
 class Application:
 
-    def __init__(self):
-        self.driver = webdriver.Chrome()
+    def __init__(self, browser):
+        if browser == 'Firefox':
+            self.driver = webdriver.Firefox()
+        elif browser == 'Chrome':
+            self.driver = webdriver.Chrome()
+        elif browser == 'IE':
+            self.driver = webdriver.Ie()
+        else:
+            raise ValueError("Unrecognized browser %s" % browser)
         self.driver.implicitly_wait(3)
         self.wait = WebDriverWait(self.driver, 5)
         self.myjson = JsonActions()
