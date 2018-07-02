@@ -12,9 +12,17 @@ def test_invalid_zip_code(driver):
 
 def test_valid_zip_code(driver):
     driver.bag_page.enter_zip_code("Valid")
+    assert driver.bag_page.showing_zip_code("Valid") == True
     assert driver.bag_page.tax_price is not None
     assert driver.bag_page.summary_price(driver.bag_page.tax_price, driver.bag_page.subtotal_price)\
            == driver.bag_page.total_price
+
+def test_change_zip_code(driver):
+    driver.bag_page.enter_zip_code("Indiana")
+    assert driver.bag_page.showing_zip_code("Indiana") == True
+    assert driver.bag_page.tax_price is not None
+    assert driver.bag_page.summary_price(driver.bag_page.tax_price,
+                                         driver.bag_page.subtotal_price) == driver.bag_page.total_price
 
 def test_store_menu(driver):
     driver.bag_page.open_stores_menu()

@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caf9b7a0-0cbc-4208-9eaf-a4d45141f22b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Tests/test_checking_empty_favorites_list.py" afterPath="$PROJECT_DIR$/Tests/test_checking_empty_favorites_list.py" />
+      <change beforePath="$PROJECT_DIR$/Locators/locators.py" afterPath="$PROJECT_DIR$/Locators/locators.py" />
+      <change beforePath="$PROJECT_DIR$/Pages/bag_page.py" afterPath="$PROJECT_DIR$/Pages/bag_page.py" />
+      <change beforePath="$PROJECT_DIR$/Pages/check_out_page.py" afterPath="$PROJECT_DIR$/Pages/check_out_page.py" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_order_options.py" afterPath="$PROJECT_DIR$/Tests/test_order_options.py" />
+      <change beforePath="$PROJECT_DIR$/Tests/test_zip_code.py" afterPath="$PROJECT_DIR$/Tests/test_zip_code.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,42 +20,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="conftest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conftest.py">
+      <file leaf-file-name="test_order_options.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/test_order_options.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            <state relative-caret-position="230">
+              <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_checking_empty_favorites_list.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/test_checking_empty_favorites_list.py">
+      <file leaf-file-name="locators.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Locators/locators.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+            <state relative-caret-position="63">
+              <caret line="87" column="82" lean-forward="true" selection-start-line="87" selection-start-column="82" selection-end-line="87" selection-end-column="82" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_gift_card.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/test_gift_card.py">
+      <file leaf-file-name="check_out_page.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pages/check_out_page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="120">
+              <caret line="82" column="8" lean-forward="false" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_zip_code.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tests/test_zip_code.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_del_favorite_signed_user.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tests/test_del_favorite_signed_user.py">
+      <file leaf-file-name="zip_codes.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/zip_codes.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+            <state relative-caret-position="85">
+              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bag_page.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pages/bag_page.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="138" column="89" lean-forward="false" selection-start-line="138" selection-start-column="89" selection-end-line="138" selection-end-column="89" />
+              <folding>
+                <element signature="e#0#64#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,6 +97,7 @@
     <findStrings>
       <find>remove</find>
       <find>act</find>
+      <find>zip</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -110,17 +138,12 @@
         <option value="$PROJECT_DIR$/Tests/test_applecare.py" />
         <option value="$PROJECT_DIR$/Tests/test_gift_card.py" />
         <option value="$PROJECT_DIR$/Pages/gift_card_block.py" />
-        <option value="$PROJECT_DIR$/Tests/test_zip_code.py" />
-        <option value="$PROJECT_DIR$/Pages/check_out_page.py" />
-        <option value="$PROJECT_DIR$/Locators/locators.py" />
         <option value="$PROJECT_DIR$/Pages/login_page.py" />
         <option value="$PROJECT_DIR$/model.py" />
-        <option value="$PROJECT_DIR$/Pages/bag_page.py" />
         <option value="$PROJECT_DIR$/Pages/favorites_page.py" />
         <option value="$PROJECT_DIR$/Tests/favorite_tests/test_del_favorite_signed_user.py" />
         <option value="$PROJECT_DIR$/data/pages_title_standart.json" />
         <option value="$PROJECT_DIR$/Tests/test_apple_job.py" />
-        <option value="$PROJECT_DIR$/Tests/test_order_options.py" />
         <option value="$PROJECT_DIR$/Tests/test_checking_presence_of_quick_links.py" />
         <option value="$PROJECT_DIR$/Tests/test_sign_in.py" />
         <option value="$PROJECT_DIR$/Application/application.py" />
@@ -129,13 +152,18 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/conftest.py" />
         <option value="$PROJECT_DIR$/Tests/test_checking_empty_favorites_list.py" />
+        <option value="$PROJECT_DIR$/Tests/test_order_options.py" />
+        <option value="$PROJECT_DIR$/Locators/locators.py" />
+        <option value="$PROJECT_DIR$/Pages/check_out_page.py" />
+        <option value="$PROJECT_DIR$/Pages/bag_page.py" />
+        <option value="$PROJECT_DIR$/Tests/test_zip_code.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-121" />
-    <option name="y" value="261" />
-    <option name="width" value="1382" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-42" />
+    <option name="y" value="162" />
+    <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -186,7 +214,7 @@
             <path>
               <item name="Testing_Apple.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="Testing_Apple.com" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -219,7 +247,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in test_gift_card.py">
+  <component name="RunManager" selected="Python tests.py.test in test_zip_code.py">
     <configuration name="py.test for test_bag_tests.test_save_item_in_bag_for_signed_up_user" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -234,21 +262,6 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_bag_tests.test_save_item_in_bag_for_signed_up_user&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="py.test in test_bag_tests.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Testing_Apple.com" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/test_bag_tests.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration name="py.test in test_checking_empty_favorites_list.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -280,7 +293,7 @@
       <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/test_gift_card.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="py.test in test_sign_in.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test in test_order_options.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -292,23 +305,38 @@
       <module name="Testing_Apple.com" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/test_sign_in.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/test_order_options.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration name="py.test in test_zip_code.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Testing_Apple.com" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/test_zip_code.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_sign_in.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_bag_tests.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_bag_tests.test_save_item_in_bag_for_signed_up_user" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_checking_empty_favorites_list.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_gift_card.py" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for test_bag_tests.test_save_item_in_bag_for_signed_up_user" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_checking_empty_favorites_list.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_gift_card.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_order_options.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_zip_code.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_gift_card.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_checking_empty_favorites_list.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for test_bag_tests.test_save_item_in_bag_for_signed_up_user" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_bag_tests.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_sign_in.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_zip_code.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_order_options.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_gift_card.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_checking_empty_favorites_list.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for test_bag_tests.test_save_item_in_bag_for_signed_up_user" />
       </list>
     </recent_temporary>
   </component>
@@ -329,35 +357,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_test_bag_tests_test_save_item_in_bag_for_signed_up_user - 2018.07.02 at 04h 55m 48s.xml">
-      <configuration name="py.test for test_bag_tests.test_save_item_in_bag_for_signed_up_user" configurationId="tests" />
+    <history-entry file="py_test_in_test_order_options_py - 2018.07.03 at 00h 11m 46s.xml">
+      <configuration name="py.test in test_order_options.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_bag_tests_test_save_item_in_bag_for_signed_up_user - 2018.07.02 at 04h 56m 46s.xml">
-      <configuration name="py.test for test_bag_tests.test_save_item_in_bag_for_signed_up_user" configurationId="tests" />
+    <history-entry file="py_test_in_test_order_options_py - 2018.07.03 at 00h 14m 51s.xml">
+      <configuration name="py.test in test_order_options.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_bag_tests_py - 2018.07.02 at 04h 51m 59s.xml">
-      <configuration name="py.test in test_bag_tests.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_order_options_py - 2018.07.03 at 00h 15m 51s.xml">
+      <configuration name="py.test in test_order_options.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_bag_tests_py - 2018.07.02 at 04h 53m 30s.xml">
-      <configuration name="py.test in test_bag_tests.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_order_options_py - 2018.07.03 at 00h 18m 57s.xml">
+      <configuration name="py.test in test_order_options.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_checking_empty_favorites_list_py - 2018.07.02 at 22h 25m 07s.xml">
-      <configuration name="py.test in test_checking_empty_favorites_list.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_order_options_py - 2018.07.03 at 00h 20m 07s.xml">
+      <configuration name="py.test in test_order_options.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_gift_card_py - 2018.07.02 at 22h 26m 46s.xml">
-      <configuration name="py.test in test_gift_card.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_order_options_py - 2018.07.03 at 00h 21m 15s.xml">
+      <configuration name="py.test in test_order_options.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_sign_in_py - 2018.07.02 at 04h 31m 39s.xml">
-      <configuration name="py.test in test_sign_in.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_order_options_py - 2018.07.03 at 00h 22m 55s.xml">
+      <configuration name="py.test in test_order_options.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_sign_in_py - 2018.07.02 at 04h 33m 04s.xml">
-      <configuration name="py.test in test_sign_in.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_order_options_py - 2018.07.03 at 00h 24m 19s.xml">
+      <configuration name="py.test in test_order_options.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_sign_in_py - 2018.07.02 at 04h 39m 09s.xml">
-      <configuration name="py.test in test_sign_in.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_zip_code_py - 2018.07.03 at 00h 33m 22s.xml">
+      <configuration name="py.test in test_zip_code.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_sign_in_py - 2018.07.02 at 04h 51m 11s.xml">
-      <configuration name="py.test in test_sign_in.py" configurationId="tests" />
+    <history-entry file="py_test_in_test_zip_code_py - 2018.07.03 at 00h 34m 49s.xml">
+      <configuration name="py.test in test_zip_code.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -370,7 +398,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24553572" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
@@ -527,13 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/zip_codes.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pages/country_list_page.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -625,20 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/test_zip_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/test_order_options.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-365">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/bag_tests/test_save_item_in_bag_for_signed_up_user.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -705,14 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/bag_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pages/header_block.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -723,28 +722,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pages/check_out_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="47" column="8" lean-forward="false" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="80" />
-          <folding>
-            <element signature="e#0#64#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/test_sign_in.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Locators/locators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="110" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="110" />
           <folding />
         </state>
       </provider>
@@ -785,6 +766,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Locators/locators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="87" column="82" lean-forward="true" selection-start-line="87" selection-start-column="82" selection-end-line="87" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/zip_codes.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/check_out_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="82" column="8" lean-forward="false" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/test_order_options.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pages/bag_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="138" column="89" lean-forward="false" selection-start-line="138" selection-start-column="89" selection-end-line="138" selection-end-column="89" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/test_zip_code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding />
         </state>
       </provider>

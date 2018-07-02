@@ -3,6 +3,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from Locators.locators import CheckOutPageLocators
 from model import ConvertingPrice
 from selenium.webdriver.common.action_chains import ActionChains
+from data.json_data import JsonActions
 from selenium.webdriver.common.keys import Keys
 
 class CheckOutPage:
@@ -12,6 +13,12 @@ class CheckOutPage:
         self.wait = WebDriverWait(driver, 5)
         self.locators = CheckOutPageLocators
         self.convert = ConvertingPrice()
+        self.myjson = JsonActions()
+
+    def bad_button(self, locator):
+        self.driver.execute_script("window.scrollTo(0, 0)")
+        button_user = self.driver.find_element(*locator)
+        ActionChains(self.driver).move_to_element(button_user).click().perform()
 
     @property
     def total_price(self):
@@ -43,14 +50,10 @@ class CheckOutPage:
         self.driver.find_element(*self.locators.close_order_menu).click()
 
     def choose_delivery(self):
-        self.driver.execute_script("window.scrollTo(0, 0)")
-        button_user = self.driver.find_element(*self.locators.delivery)
-        ActionChains(self.driver).move_to_element(button_user).click().perform()
+        self.bad_button(self.locators.delivery)
 
     def choose_pick_up(self):
-        self.driver.execute_script("window.scrollTo(0, 0)")
-        button_user = self.driver.find_element(*self.locators.pick_up)
-        ActionChains(self.driver).move_to_element(button_user).click().perform()
+        self.bad_button(self.locators.pick_up)
 
     @property
     def delivery_header(self):
@@ -76,6 +79,32 @@ class CheckOutPage:
     @property
     def pick_up_zip_message(self):
         return self.driver.find_element(*self.locators.pick_up_zip_message).text
+
+    def add_zip_code(self, zip):
+        jsonfile = self.myjson.read_json_file("zip_codes.json")
+        self.driver.find_element(*self.locators.enter_zip_code).clear()
+        self.driver.find_element(*self.locators.enter_zip_code).send_keys(jsonfile[zip])
+        self.bad_button(self.locators.zip_code_apply)
+
+    def change_zip_code(self, zip):
+        jsonfile = self.myjson.read_json_file("zip_codes.json")
+        self.driver.find_element(*self.locators.zip_edit_button).click()
+        self.wait.until(EC.element_to_be_clickable(self.locators.enter_zip_code))
+        self.driver.find_element(*self.locators.enter_zip_code).clear()
+        self.driver.find_element(*self.locators.enter_zip_code).send_keys(jsonfile[zip])
+        self.bad_button(self.locators.zip_code_apply)
+
+    def showing_zip_code(self, zip):
+        jsonfile = self.myjson.read_json_file("zip_codes.json")
+        try:
+            self.wait.until(EC.text_to_be_present_in_element(self.locators.zip_edit_button, jsonfile[zip]))
+            return True
+        except:
+            return False
+
+    @property
+    def wrong_zip_error_message(self):
+        return self.driver.find_element(*self.locators.wrong_zip).text
 
     def summary_price(self, *price):
         result_price = 0

@@ -166,6 +166,10 @@ class CheckOutPageLocators:
     delivery_tommorow_price = (By.XPATH, "//input[@data-autom='delivery-option-SO']/.."
                                    "//span[@class='form-choiceselectorlabel-twocolright']/div[1]")
     pick_up_zip_message     = (By.XPATH, "//h2[@class='rs-fulfillment-pickup-coldstate-header large-6 small-12']")
+    enter_zip_code          = (By.XPATH, "//input[@id='rr-navigableinput-checkout.fulfillment.pickupTab.pickup.storeLocator.searchInput_autocomplete.options']")
+    zip_code_apply          = (By.XPATH, "//button[@data-autom='checkout-cityState-apply']")
+    wrong_zip               = (By.XPATH, "//div[@id='checkout.fulfillment.pickupTab.pickup.storeLocator.searchInput-error']")
+    zip_edit_button         = (By.XPATH, "//button[@id='rs-fulfillment-cityStateField']")
     secure_message          = (By.XPATH, "//h2[@id='checkout.companionBar.showSecureCheckoutOverlay-label']")
     secure_message_continue = (By.XPATH, "//a[@class='button form-button rs-securecheckout-button']")
 

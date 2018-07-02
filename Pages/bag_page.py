@@ -133,6 +133,14 @@ class BagPage:
         if len(self.driver.find_elements(*self.locators.zip_code_apply)) == 0:
             self.wait.until_not(EC.text_to_be_present_in_element(self.locators.summary_tax_value, price))
 
+    def showing_zip_code(self, zip):
+        jsonfile = self.myjson.read_json_file("zip_codes.json")
+        try:
+            self.wait.until(EC.text_to_be_present_in_element(self.locators.enter_zip_code, jsonfile[zip]))
+            return True
+        except:
+            return False
+
     @property
     def zip_code_error(self):
         self.wait.until(EC.presence_of_element_located(self.locators.zip_code_error))

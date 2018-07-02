@@ -26,6 +26,18 @@ def test_checking_pick_up(driver):
     driver.check_out_page.choose_pick_up()
     assert driver.check_out_page.pick_up_zip_message == 'Enter a zip code to see item availability for nearby stores.'
 
+def test_add_zip_invalid_code(driver):
+    driver.check_out_page.add_zip_code("Invalid")
+    assert driver.check_out_page.wrong_zip_error_message == "Please enter a valid city or zip code."
+
+def test_add_zip_valid_code(driver):
+    driver.check_out_page.add_zip_code("Valid")
+    assert driver.check_out_page.showing_zip_code("Valid") == True
+
+def test_change_zip_code(driver):
+    driver.check_out_page.change_zip_code("Indiana")
+    assert driver.check_out_page.showing_zip_code("Indiana") == True
+
 def test_order_info(driver):
     driver.check_out_page.show_order_summary()
     assert driver.check_out_page.total_price == driver.check_out_page.order_menu_total_price
