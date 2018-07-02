@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caf9b7a0-0cbc-4208-9eaf-a4d45141f22b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Tests/bag_tests/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Tests/bag_tests/test_add_one_item_to_bag.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Tests/bag_tests/test_checking_quantity_items_in_bag.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Tests/bag_tests/test_del_item_from_bag.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Tests/bag_tests/test_empty_bag_page.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Tests/bag_tests/test_save_item_in_bag_for_signed_up_user.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Tests/favorite_tests/test_add_to_favorite_signed_user.py" afterPath="$PROJECT_DIR$/Tests/test_add_to_favorite_signed_user.py" />
-      <change beforePath="$PROJECT_DIR$/Tests/favorite_tests/test_add_to_favorite_unsigned_user.py" afterPath="$PROJECT_DIR$/Tests/test_add_to_favorite_unsigned_user.py" />
-      <change beforePath="$PROJECT_DIR$/Tests/favorite_tests/test_checking_empty_favorites_list.py" afterPath="$PROJECT_DIR$/Tests/test_checking_empty_favorites_list.py" />
-      <change beforePath="$PROJECT_DIR$/Tests/favorite_tests/test_del_favorite_signed_user.py" afterPath="$PROJECT_DIR$/Tests/test_del_favorite_signed_user.py" />
-      <change beforePath="$PROJECT_DIR$/Tests/favorite_tests/test_favorite_unsigning_up_user.py" afterPath="$PROJECT_DIR$/Tests/test_favorite_unsigning_up_user.py" />
       <change beforePath="$PROJECT_DIR$/conftest.py" afterPath="$PROJECT_DIR$/conftest.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
